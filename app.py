@@ -3,7 +3,7 @@ import xgboost as xgb
 import numpy as np
 import pickle
 # モデルをファイルから読み込む
-with open('xgboost_model.pkl', 'rb') as f:
+with open('xgboost_model (2).pkl', 'rb') as f:
     loaded_model = pickle.load(f)
 
 # ページのタイトルを設定
