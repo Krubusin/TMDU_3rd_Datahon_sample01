@@ -7,7 +7,7 @@ with open('xgboost_model (2).pkl', 'rb') as f:
     loaded_model = pickle.load(f)
 
 # ページのタイトルを設定
-st.title("SpO2-SaO2 Predictor")
+st.title("prediction to take ABG")
 
 # ユーザーからの数値入力を受け取る
 # sex_female = st.number_input("Sex (0 for male, 1 for female)", 0, 1, 0)
