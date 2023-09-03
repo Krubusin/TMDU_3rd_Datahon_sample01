@@ -2,9 +2,13 @@ import streamlit as st
 import xgboost as xgb
 import numpy as np
 import pickle
+
+st.markdown(open("style.css").read(), unsafe_allow_html=True)
+
 # モデルをファイルから読み込む
 with open('xgboost_model.pkl', 'rb') as f:
     loaded_model = pickle.load(f)
+
 
 # ページのタイトルを設定
 st.title("SpO2_SaO2 Predictor")
