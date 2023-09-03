@@ -1,12 +1,3 @@
-st.markdown("""
-    <style>
-        body {
-            background-color: #000000;
-            color: #ffffff;
-        }
-    </style>
-    """, unsafe_allow_html=True)
-
 import streamlit as st
 import xgboost as xgb
 import numpy as np
