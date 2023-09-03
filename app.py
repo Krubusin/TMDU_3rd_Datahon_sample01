@@ -3,7 +3,14 @@ import xgboost as xgb
 import numpy as np
 import pickle
 
-st.markdown(open("style.css").read(), unsafe_allow_html=True)
+st.markdown("""
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+        }
+    </style>
+    """, unsafe_allow_html=True)
 
 # モデルをファイルから読み込む
 with open('xgboost_model.pkl', 'rb') as f:
