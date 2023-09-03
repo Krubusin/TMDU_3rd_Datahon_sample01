@@ -1,8 +1,3 @@
-import streamlit as st
-import xgboost as xgb
-import numpy as np
-import pickle
-
 st.markdown("""
     <style>
         body {
@@ -11,6 +6,12 @@ st.markdown("""
         }
     </style>
     """, unsafe_allow_html=True)
+
+import streamlit as st
+import xgboost as xgb
+import numpy as np
+import pickle
+
 
 # モデルをファイルから読み込む
 with open('xgboost_model.pkl', 'rb') as f:
