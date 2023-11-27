@@ -7,7 +7,7 @@ with open('xgboost_model.pkl', 'rb') as f:
     loaded_model = pickle.load(f)
 
 # ページのタイトルを設定
-st.title("SpO2-SaO2 Predictor")
+st.title("the need to take ABG")
 
 # ユーザーからの数値入力を受け取る
 SpO2 = st.slider("SpO2",min_value=90.0, max_value=100.0, value=98.0)
@@ -22,7 +22,7 @@ vasopress_0 = st.radio(
 Vasopressor = (0 if vasopress_0 == 'No' else 1)
 
 Ventilation_0 = st.radio(
-    "invasive_ventilation Use?",
+    "Invasive_ventilation Use?",
     ["Yes", "No"])
 Ventilation = (0 if Ventilation_0 == 'No' else 1)
 Temperature = st.slider("temperature",min_value=34, max_value=44, value=36)
