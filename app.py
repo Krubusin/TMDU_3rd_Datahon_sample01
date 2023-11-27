@@ -7,7 +7,7 @@ with open('xgboost_model.pkl', 'rb') as f:
     loaded_model = pickle.load(f)
 
 # ページのタイトルを設定
-st.title("the need to take ABG")
+st.title("The need to take ABG")
 
 # ユーザーからの数値入力を受け取る
 SpO2 = st.slider("SpO2",min_value=90.0, max_value=100.0, value=98.0)
@@ -25,7 +25,7 @@ Ventilation_0 = st.radio(
     "Invasive_ventilation Use?",
     ["Yes", "No"])
 Ventilation = (0 if Ventilation_0 == 'No' else 1)
-Temperature = st.slider("temperature",min_value=34, max_value=44, value=36)
+Temperature = st.slider("Temperature",min_value=34, max_value=44, value=36)
 sex = st.radio(
     "Your patient is?",
     ["Male", "Female"])
