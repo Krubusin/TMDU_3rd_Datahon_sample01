@@ -43,7 +43,7 @@ selected_race = st.radio(
 
 
 # 選択されたRaceを1、他のRaceを0にエンコード
-race_encoded = {race: 1 if race == selected_race else 0 for race in ["Black", "White", "Hispanic", "Asia"]}
+race_encoded = {race: 1 if race == selected_race else 0 for race in ["Black", "White", "Hispanic", "Asian"]}
 
 # ボタンを押す代わりに入力データで予測を実行
 input_data = np.array([[Female, Age, MBP, RR, HR, Vasopressor, SpO2, BMI,  Ventilation, Temperature] + list(race_encoded.values())])
