@@ -10,7 +10,7 @@ with open('xgboost_model.pkl', 'rb') as f:
 st.title("The need to take ABG")
 
 # ユーザーからの数値入力を受け取る
-SpO2 = st.slider("SpO2",min_value=90.0, max_value=100.0, value=98.0)
+SpO2 = st.slider("SpO2",min_value=80.0, max_value=100.0, value=98.0)
 SpO2 = int(SpO2)
 RR = st.slider("Respiratory Rate", min_value=10.0, max_value=70.0, value=20.0, step=0.1)
 MBP = st.slider("mean blood pressure", min_value=60.0, max_value=200.0, value=75.0, step=0.1)
