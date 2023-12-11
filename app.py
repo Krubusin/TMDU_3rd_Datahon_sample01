@@ -31,7 +31,7 @@ sex = st.radio(
     ["Male", "Female"])
 Female = (0 if sex == 'Male' else 1)
 BMI = st.slider("BMI", min_value=15.0, max_value=45.0, value=28.0, step=0.1)
-Age = st.slider('How old are your patient?', 0, 100, 65)
+Age = st.slider('How old are your patient?', 18, 100, 65)
 Age = int(Age)
 # st.write("He/She is ", anchor_age, 'years old')
 
