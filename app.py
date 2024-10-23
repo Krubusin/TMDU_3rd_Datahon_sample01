@@ -3,11 +3,10 @@ import xgboost as xgb
 import numpy as np
 import pickle
 # モデルをファイルから読み込む
-#with open('xgboost_model.pkl', 'rb') as f:
- #   loaded_model = pickle.load(f)
+#with open('XGBoost_best_model_auc.pkl', 'rb') as f:
+#    loaded_model = pickle.load(f)
 
-
-with open('XGBoost_best_model_auc.pkl', 'rb') as f:
+with open('XGBoost_best_model_weight.pkl', 'rb') as f:
     loaded_model = pickle.load(f)
 
 
